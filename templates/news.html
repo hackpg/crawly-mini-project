@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Popular-News</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{{url_for('static',filename = 'css/base.css')}}">
+   <link rel="stylesheet" href="{{url_for('static',filename = 'css/vendor.css')}}">  
+   <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css')}}">
+        
+
+   <!-- script
+   ================================================== -->
+	<script src="{{url_for('static',filename='js/modernizr.js')}}"></script>
+	<script src="{{url_for('static',filename='js/pace.min.js')}}"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="{{url_for('static',filename='images/logo.png')}}" type="image/x-icon">
+
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header class="short-header">   
+
+   	<div class="gradient-block"></div>	
+
+   	<div class="row header-content">
+
+   		<div class="logo">
+	         <a href="blogs-dashborad.html">Author</a><span><h3><i>Hello, Welcome User!</i></h3></span>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation sf-menu">								
+					<li class="has-children">
+						<a href="category.html" title="">Blogs</a>
+						<ul class="sub-menu">
+			            <li ><a href="category.html">Popular</a></li>
+			            <li><a href="category.html">Fashion</a></li>
+			            <li><a href="category.html">Entertainment</a></li>
+			            <li><a href="category.html">Technology</a></li>
+			            <li><a href="category.html">Inspirational</a></li>
+			            <li><a href="category.html">Cooking</a></li>
+			         </ul>
+					</li>
+					<li class="has-children current">
+						<a href="news"  title="">News</a>
+						<ul class="sub-menu">
+			            <li class="current"><a href="news">Popular</a></li>
+			            <li><a href="single-audio.html">Latest</a></li>
+			            <li><a href="single-gallery.html">Entertainment</a></li>
+			            <li><a href="single-standard.html">Sports</a></li>
+			         </ul>
+					</li>
+					<li><a href="style-guide.html" title="">Styles</a></li>
+					<li><a href="about.html" title="">Add URL</a></li>	
+					<li><a href="contact.html" title="">Contact</a></li>	
+               <li><a href="contact.html" style="color: green;">Signout <span class="fa fa-sign-out"></span></a></li>  									
+				</ul>
+			</nav> <!-- end main-nav-wrap -->
+
+		
+
+			<div class="triggers">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+			</div> <!-- end triggers -->	
+   		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+
+
+   <!-- masonry
+   ================================================== -->
+   <section id="bricks">
+
+   	<div class="row masonry">
+
+   		<!-- brick-wrapper -->
+         <div class="bricks-wrapper">
+
+         	<div class="grid-sizer"></div>
+
+         	
+         	<article class="brick entry format-standard animate-this">
+
+               <div class="entry-thumb">
+                  <a href="single-standard.html" class="thumb-link">
+	                  <img src="{{url_for('static',filename='images/thumbs/diagonal-building.jpg')}}" alt="building">             
+                  </a>
+               </div>
+
+               <div class="entry-text">
+               	<div class="entry-header">
+
+               		<div class="entry-meta">
+               			<span class="cat-links">
+               				<a href="#"><span class="fa fa-thumbs-up"> Like</span></a>     
+                           <a href="#"><span class="fa fa-share"> Share</span></a>        				
+               			</span>			
+               		</div>
+
+               		<h1 class="entry-title"><a href="single-standard.html">Just a Standard Format Post.</a></h1>
+               		
+               	</div>
+						<div class="entry-excerpt">
+							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
+						</div>
+               </div>
+
+        		</article> <!-- end article -->
+
+           
+
+         </div> <!-- end brick-wrapper --> 
+
+   	</div> <!-- end row -->
+
+   	<div class="row">
+   		
+   		<nav class="pagination">
+		      <span class="page-numbers prev inactive">Prev</span>
+		   	<span class="page-numbers current">1</span>
+		   	<a href="#" class="page-numbers">2</a>
+		      <a href="#" class="page-numbers">3</a>
+		      <a href="#" class="page-numbers">4</a>
+		      <a href="#" class="page-numbers">5</a>
+		      <a href="#" class="page-numbers">6</a>
+		      <a href="#" class="page-numbers">7</a>
+		      <a href="#" class="page-numbers">8</a>
+		      <a href="#" class="page-numbers">9</a>
+		   	<a href="#" class="page-numbers next">Next</a>
+	      </nav>
+
+   	</div>
+
+   </section> <!-- end bricks -->
+
+   
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   
+      <div class="footer-bottom">
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>Walchand College Of Engineering</span> 
+		         	<span>Design by Cra<a href="http://www.styleshout.com/">styleshout</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> 
+      </div> <!-- end footer-bottom -->  
+
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="{{url_for('static',filename='js/jquery-2.1.3.min.js')}}"></script>
+   <script src="{{url_for('static',filename='js/plugins.js')}}"></script>
+   <script src="{{url_for('static',filename='js/jquery.appear.js')}}"></script>
+   <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+
+</html>

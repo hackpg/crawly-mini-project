@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Standard Format Post - Abstract</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{{url_for('static',filename = 'css/base.css')}}">
+   <link rel="stylesheet" href="{{url_for('static',filename = 'css/vendor.css')}}">  
+   <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css')}}">
+        
+
+   <!-- script
+   ================================================== -->
+	<script src="{{url_for('static',filename='js/modernizr.js')}}"></script>
+	<script src="{{url_for('static',filename='js/pace.min.js')}}"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header class="short-header">   
+
+   	<div class="gradient-block"></div>	
+
+   	<div class="row header-content">
+
+   		<div class="logo">
+	         <a href="blogs-dashborad.html"><img src="{{url_for('static',filename='images/solo.png')}}"></a><span><h3><i>Hello, Welcome</i></h3></span>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation sf-menu">								
+					<li class="has-children">
+						<a href="blogs-dashboard" title="">Blogs</a>
+						<ul class="sub-menu">
+			            <li ><a href="category.html">Popular</a></li>
+			            <li><a href="category.html">Fashion</a></li>
+			            <li><a href="category.html">Entertainment</a></li>
+			            <li><a href="category.html">Technology</a></li>
+			            <li><a href="category.html">Inspirational</a></li>
+			            <li><a href="category.html">Cooking</a></li>
+			         </ul>
+					</li>
+					<li class="has-children">
+						<a href="news-world" title="">News</a>
+						<ul class="sub-menu">
+			            <li><a href="news-world">World</a></li>
+			            <li><a href="news-india">India</a></li>
+			            <li><a href="news-entertainment">Entertainment</a></li>
+			         </ul>
+					</li>
+					<li class="has-children">
+						<a href="ieee-cse" title="">IEEE</a>
+						<ul class="sub-menu">
+			            <li><a href="news-world">Computer</a></li>
+			            <li><a href="single-audio.html">Mechanical/a></li>
+			            <li><a href="ieee-eln">Electronics</a></li>
+			         </ul>
+					</li>
+					<li><a href="add-url" title="">Add URL</a></li>	
+					<li><a href="contact.html" title="">Contact</a></li>	
+               <li><a href="/" style="color: green;">Signout <span class="fa fa-sign-out"></span></a></li>  									
+				</ul>
+			</nav> <!-- end main-nav-wrap -->
+
+			<div class="search-wrap">
+				
+				<form role="search" method="get" class="search-form" action="#">
+					<label>
+						<span class="hide-content">Search for:</span>
+						<input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+					</label>
+					<input type="submit" class="search-submit" value="Search">
+				</form>
+
+				<a href="#" id="close-search" class="close-btn">Close</a>
+
+			</div> <!-- end search wrap -->	
+
+			<div class="triggers">
+				<a class="search-trigger" href="#"><i class="fa fa-search"></i></a>
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+			</div> <!-- end triggers -->	
+   		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+   
+
+   <!-- content
+   ================================================== -->
+
+   <section id="content-wrap" class="blog-single">
+   	<div class="row">
+   		<div class="col-twelve">
+   			  {% for x in tmp%}
+   			<article class="format-standard">  
+
+   				<div>
+						
+							<img src="{{x.set.image}}" alt="building">  
+					</div>
+
+					<div class="primary-content">
+
+						<h1 class="page-title">{{x.set.heading}}</h1>	
+
+						<hr>				
+
+						<p class="lead">{{x.set.text}}</p> 
+						
+					<a href="{{x.set.url}}" >See Original Article</a>
+					</div> <!-- end entry-primary -->		  			   
+
+				</article>
+   				{%endfor%}
+
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->
+		</div> <!-- end comments-wrap -->
+
+   </section> <!-- end content -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="{{url_for('static',filename='js/jquery-2.1.3.min.js')}}"></script>
+   <script src="{{url_for('static',filename='js/plugins.js')}}"></script>
+   <script src="{{url_for('static',filename='js/jquery.appear.js')}}"></script>
+   <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+
+</html>
